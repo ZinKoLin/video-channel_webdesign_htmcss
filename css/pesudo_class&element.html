@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: teal;
+    }
+
+    .content{
+        background-color: white;
+        width: 500px;
+        height: 400px;
+        text-align: center;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 20px;
+        transition: 1s;
+
+    }
+    .title{
+        padding-top: 50px;
+        font-size: 30px;
+    }
+    .param{
+        padding: 15px 20px ;
+    }
+
+    .btn{
+        background-color: darkslategray;
+        color: white;
+        font-size: 20px;
+        width: 50%;
+        border: none;
+        border-radius: 20px;
+        padding: 15px 20px;
+        transition: 1s;
+
+    }
+
+    /* pseudo class : */
+    
+    .content:hover{
+        background-color:rgb(36, 31, 31);
+        color:white
+    }
+    
+    .btn:focus{
+        background-color: red;
+    }
+
+    .content:active{
+        background-color: rgb(30, 210, 75);
+    }
+
+    /* pesudo element */
+
+    span::before{
+        content: "This is Before";
+        font-size: 20px;
+        color:red;
+    }
+    span::after{
+        content: "This is after";
+        font-size: 20px;
+        color:rgb(109, 16, 202);
+    }
+    .mypara{
+        
+        text-align: center;
+        margin: auto;
+    }
+
+</style>
+<hr>
+    <div class="content">
+        <div class="title">
+            Hello Everyone !
+        </div>
+        <p class="param">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, sapiente eum illum nam, adipisci aperiam veniam, nihil laborum molestias impedit obcaecati quaerat id est qui voluptatibus dolores labore perferendis quod?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fuga quia iusto placeat debitis tempora veritatis doloremque maiores et beatae atque dolor, ullam iure quo delectus ab rerum? Totam, voluptatum!
+        </p>
+        <button class="btn">Register</button>
+    </div>
+    <hr>
+    
+    <div class="mypara">
+        <span>Hello World</span>
+    </div>
+
+</body>
+</html>
